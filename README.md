@@ -4,4 +4,5 @@
 
 ### Usage
 
-1. 
+1. Download the setup script: `curl https://raw.githubusercontent.com/NWBY/vrv/main/setup.sh -o vrv; chmod +x vrv`
+2. Create a new project: `./vrv <project-name>`
