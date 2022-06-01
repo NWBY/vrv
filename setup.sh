@@ -17,8 +17,20 @@ echo ""
 echo "-------------------------------------------------------------"
 echo ""
 
-TODO
-1. create the directory to hold reach code - contracts?
-2. in the 'contracts' dir, run the reach setup script
+echo "Creating contracts directory"
+mkdir src/contracts
+echo "Created contracts directory"
 
-Done
+echo ""
+echo "-------------------------------------------------------------"
+echo ""
+
+echo "Setting up reach"
+npm i @reach-sh/stdlib
+
+cd src/contracts
+
+curl https://docs.reach.sh/reach -o reach ; chmod +x reach
+
+# TODO - decide to either create the files manually or via ./reach run
+echo "Setup reach"
